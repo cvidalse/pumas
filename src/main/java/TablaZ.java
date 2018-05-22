@@ -10,20 +10,22 @@
  */
 public class TablaZ {
 
-    int[][] tabla;
+   static int[][] tabla;
 
     
-    public void operacionTabla(int n, String op){
-        if(op.equals("+"));
-            sumaTabla(n);
-        if(op.equals("*")); 
-            multiplicacion(n);
+    public static int[][] operacionTabla(int n, String op){
+        if(op.equals("+")){
+           return sumaTabla(n);
+        }
+        else {
+           return multiplicacion(n);
+    }
 
     }
 
 
 
-    public int[][] sumaTabla(int x) {
+    public static int[][] sumaTabla(int x) {
         tabla = new int[x][x];
         for (int i = 0; i < x; i++) {
             
@@ -37,7 +39,7 @@ public class TablaZ {
 
   
    
-    public void multiplicacion(int n){
+    public static int[][] multiplicacion(int n){
         tabla= new int[n][n];
 
         for(int i=0;i<n;i++){
@@ -45,6 +47,7 @@ public class TablaZ {
                 tabla[i][n]=n*i;
             }
         }
+        return tabla;
     }
 
 }
