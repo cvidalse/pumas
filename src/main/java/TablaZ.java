@@ -9,6 +9,7 @@
  * @author Ce
  */
 public class TablaZ {
+<<<<<<< HEAD
 
     int[][] tabla;
 
@@ -24,4 +25,15 @@ public class TablaZ {
         return null;
     }
 
+=======
+    private int[][] matriz;
+    public void multiplicación(int n){
+        matriz= new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int c=0;c<n;c++){
+                matriz[i][n]=n*i;
+            }
+        }
+    }
+>>>>>>> origin/master
 }
