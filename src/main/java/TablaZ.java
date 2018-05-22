@@ -13,7 +13,7 @@ public class TablaZ {
 
     int[][] tabla;
 
-    public int[][] sumaTabla(int x, String operacion) {
+    public int[][] sumaTabla(int x) {
         tabla = new int[x][x];
         for (int i = 0; i < x; i++) {
             
