@@ -18,9 +18,9 @@ import static org.junit.Assert.*;
 public class testTablaZ {
     
     @Test
-    public testTablaZ() {
+    public void testTablaZ() {
         int[][] matrizMultiplicacion2={{0,0},{0,1}};
-        assertArrayEquals(, matrizMultiplicacion2);
+        assertArrayEquals(matrizMultiplicacion2,TablaZ.operacionTabla(2, "*"));
     }
     
    
