@@ -18,4 +18,9 @@ public class TablaZ {
             }
         }
     }
+    
+    public void suma(int n){
+        matriz=new int[n][n];
+        
+    }
 }
