@@ -21,6 +21,7 @@ public class TablaZ {
                 tabla[i][j]= x*i;        
                         }
         }
+        
         return tabla;
     }
 
