@@ -18,8 +18,8 @@ public class TablaZ {
         for (int i = 0; i < x; i++) {
             
             for (int j = 0; j < x; j++) {
-                tabla[i][j]= x*i;        
-                        }
+                tabla[i][j]= (i+j)%x;        
+        }
         }
         
         return tabla;
