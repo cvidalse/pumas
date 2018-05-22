@@ -9,9 +9,9 @@
  * @author Ce
  */
 public class TablaZ {
-    
+    private int[][] matriz;
     public void multiplicación(int n){
-        int[][] matriz= new int[n][n];
+        matriz= new int[n][n];
         for(int i=0;i<n;i++){
             for(int c=0;c<n;c++){
                 matriz[i][n]=n*i;
