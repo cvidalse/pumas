@@ -10,4 +10,12 @@
  */
 public class TablaZ {
     
+    public void multiplicación(int n){
+        int[][] matriz= new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int c=0;c<n;c++){
+                matriz[i][n]=n*i;
+            }
+        }
+    }
 }
