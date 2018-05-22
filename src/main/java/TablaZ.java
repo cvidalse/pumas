@@ -9,24 +9,23 @@
  * @author Ce
  */
 public class TablaZ {
-<<<<<<< HEAD
+
 
     int[][] tabla;
 
     public int[][] sumaTabla(int x, String operacion) {
         tabla = new int[x][x];
         for (int i = 0; i < x; i++) {
-            int c=0;
+            
             for (int j = 0; j < x; j++) {
-                tabla[i][j]=c;        
-                        c++;
+                tabla[i][j]= i%j;        
                         }
         }
-        return null;
+        return tabla;
     }
 
-=======
     private int[][] matriz;
+   
     public void multiplicación(int n){
         matriz= new int[n][n];
         for(int i=0;i<n;i++){
@@ -35,5 +34,5 @@ public class TablaZ {
             }
         }
     }
->>>>>>> origin/master
+
 }
