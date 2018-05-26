@@ -44,7 +44,7 @@ public class TablaZ {
 
         for(int i=0;i<n;i++){
             for(int c=0;c<n;c++){
-                tabla[i][c]=c*i;
+                tabla[i][c]=(c*i)%n;
             }
         }
         return tabla;

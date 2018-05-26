@@ -18,9 +18,14 @@ import static org.junit.Assert.*;
 public class testTablaZ {
     
     @Test
-    public void testTablaZ() {
-        int[][] matrizMultiplicacion2={{0,0},{0,1}};
-        assertArrayEquals(matrizMultiplicacion2,TablaZ.operacionTabla(2, "*"));
+    public void testTablaZMult() {
+        int[][] matrizMultiplicacion2={{0,0,0,0},{0,1,2,3},{0,2,0,2},{0,3,2,1}};
+        assertArrayEquals(matrizMultiplicacion2,TablaZ.operacionTabla(4, "*"));
+    }
+     @Test
+    public void sumaTablaTest(){
+        int[][] suma1= {{0,1,2,3},{1,2,3,0},{2,3,0,1},{3,0,1,2}};
+        assertArrayEquals(suma1,TablaZ.operacionTabla(4,"+"));
     }
     
    
